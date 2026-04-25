@@ -77,5 +77,7 @@
     searchInput.addEventListener("input", updateLibrary);
   }
 
-  setFilter("all");
+  const requestedFilter = new URLSearchParams(window.location.search).get("filter") || "all";
+  const allowedFilters = ["all", "catholicisme", "islam", "protestantisme", "kamite"];
+  setFilter(allowedFilters.includes(requestedFilter) ? requestedFilter : "all");
 })();
