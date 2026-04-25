@@ -1,0 +1,11 @@
+.superpowers/
+.chrome-headless-*/
+.site-server.pid
+.site-server.url
+server.log
+server.err.log
+*.png
+assets/images/st-peters-basilica.jpg
+gh-auth.log
+gh-auth.err.log
+gh-auth.pid
