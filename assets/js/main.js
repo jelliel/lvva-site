@@ -43,6 +43,7 @@
   function setFilter(filter) {
     activeFilter = filter;
     filterButtons.forEach((button) => {
+      if (!button.dataset.filter) return;
       const isActive = button.dataset.filter === filter;
       button.classList.toggle("active", isActive);
       button.setAttribute("aria-pressed", String(isActive));
