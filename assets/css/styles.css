@@ -130,6 +130,13 @@ a {
   color: var(--cardinal);
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--cardinal);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 8px;
+}
+
 .nav-toggle {
   display: none;
   width: 44px;
@@ -293,6 +300,42 @@ a {
   max-width: var(--max);
   margin: 0 auto;
   padding: 84px 24px;
+}
+
+.page-hero {
+  background:
+    linear-gradient(90deg, rgba(118, 22, 40, .12), transparent 34%, rgba(31, 74, 61, .08)),
+    var(--parchment);
+  border-bottom: 1px solid rgba(36, 22, 15, .14);
+}
+
+.page-hero-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 72px 24px 62px;
+}
+
+.page-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: .96;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 20px 0 0;
+  font: 18px/1.65 Arial, sans-serif;
+  color: var(--muted);
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
 }
 
 .section-heading {
